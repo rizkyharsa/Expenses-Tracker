@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'modules/home/views/home_view.dart';
+import 'main_view.dart';
 
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});
@@ -15,7 +15,7 @@ class Splashscreen extends StatefulWidget {
 class _SplashscreenState extends State<Splashscreen> {
   Timer startSplashScreen() {
     var duration = const Duration(seconds: 3);
-    return Timer(duration, () async => Get.offAll(() => const HomeView(), transition: Transition.fadeIn));
+    return Timer(duration, () async => Get.offAll(() => const MainView(), transition: Transition.fadeIn));
   }
 
   @override
