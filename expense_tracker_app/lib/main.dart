@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'splashscreen.dart';
+import 'utility/theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Expenses Tracker',
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
+      // themeMode: ThemeMode.system,
+      theme: AppTheme.lightTheme,
       home: const Splashscreen(),
     );
   }
