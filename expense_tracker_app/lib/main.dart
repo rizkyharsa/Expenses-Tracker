@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'modules/home/controllers/home_controller.dart';
 import 'splashscreen.dart';
 import 'utility/theme/app_theme.dart';
 
@@ -18,7 +19,15 @@ class MyApp extends StatelessWidget {
       title: 'Expenses Tracker',
       // themeMode: ThemeMode.system,
       theme: AppTheme.lightTheme,
-      home: const Splashscreen(),
+      home: Builder(
+        builder: (context) {
+          return const Splashscreen();
+        },
+      ),
+      initialBinding: BindingsBuilder(() {
+        // Initialize any dependencies or controllers here if needed
+        Get.lazyPut(() => HomeController(), fenix: true);
+      }),
     );
   }
 }
