@@ -148,3 +148,4 @@ D:\Portofolio\Expenses Tracker\ExpenseTracker.API\obj\Debug\net10.0\ref\ExpenseT
 D:\Portofolio\Expenses Tracker\ExpenseTracker.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Portofolio\Expenses Tracker\ExpenseTracker.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Portofolio\Expenses Tracker\ExpenseTracker.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Portofolio\Expenses Tracker\ExpenseTracker.API\obj\Debug\net10.0\ExpenseTracker.API.sourcelink.json
